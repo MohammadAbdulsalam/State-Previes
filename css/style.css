@@ -1,0 +1,82 @@
+/* Start Variables */
+:root {
+    --Very-dark-blue: hsl(233, 47%, 7%);
+    --Dark-desaturated-blue: hsl(244, 38%, 16%);
+    --Soft-violet: hsl(277, 64%, 61%);
+    --White: hsl(0, 0%, 100%);
+    --Slightly-transparent-white: hsla(0, 0%, 100%, 0.75);
+    --Slightly-transparent-white1: hsla(0, 0%, 100%, 0.6);
+}
+* {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+  }
+  body {
+    font-family: 'Inter', sans-serif;
+    font-family: 'Lexend Deca', sans-serif;
+    background-color: #0a0c1b;
+    height: 100vh;
+  }
+  @media (max-width: 1200px) {
+    body {
+      width: 1440px;
+    }
+  }
+  @media (max-width: 767px) {
+    body {
+      width: 375px;
+    }
+  }
+/* End Variables */
+/* Sta{rt Card */
+.card {
+    background-color: var(--Soft-violet);
+    color: white;
+    height: 445px;
+    width: 1110px;
+    margin: 177.5px 165px;
+    display: flex;
+    flex-direction: row-reverse;
+}
+.card img {
+    filter: opacity(0.5);
+}
+.card .leftside {
+    background-color: var(--Dark-desaturated-blue);
+    font-size: 15px;
+    padding: 0px 167px 0px 70px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.card .leftside header {
+    font-weight: 700;
+    letter-spacing: 1px;
+}
+.card .leftside header span {
+    color: var(--Soft-violet);
+}
+.card .leftside main {
+    color: var(--Slightly-transparent-white1);
+    font-weight: 400;
+    font-size: 13px;
+}
+
+.card .leftside footer {
+    padding-top: 10px;
+    display: flex;
+    justify-content: space-between;
+}
+.card .leftside footer div h2{
+    font-weight: 700;
+    margin: 25px 0 0 ;
+}
+.card .leftside footer div p {
+    margin: 10px 0;
+    font-weight: 400;
+    font-size: 10px;
+    text-transform: uppercase;
+    color: var(--Slightly-transparent-white1);
+}
+/* End Card */
